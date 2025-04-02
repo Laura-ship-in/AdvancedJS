@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module" >
+        import { Carte } from "./Carte.js";
+        let carte1 = new Carte(1, 'Liviu Rebreanu', 1998, 'drama', 'Bookzone');
+        let carte2 = new Carte(2, 'Enigma Otiliei', 'George Calinescu', 300, 'Bookzone');
+        let carte3 = new Carte(3, 'Mara', 'Liviu Rebreanu', 250, 'Bookzone');
+        console.log("carte1 :>> ", carte1);
+        console.log("carte2 :>> ", carte2);
+        console.log("carte3 :>> ", carte3);
+
+        carte1.afiseazaInfo();
+        carte2.afiseazaInfo();
+        carte3.afiseazaInfo();
+
+        carte1.citeste();
+        carte2.citeste();
+        carte3.citeste();
+    </script>
+</body>
+</html>
