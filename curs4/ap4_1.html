@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Demo{
+            constructor(name){
+                throw new TypeError("Abstract class can not be instantiated");
+            }
+            salut(){
+                console.log("Salut");
+        }
+    }
+    let obj = new Demo();
+    </script>
+</body>
+</html>
