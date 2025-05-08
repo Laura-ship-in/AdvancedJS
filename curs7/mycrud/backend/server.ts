@@ -1,26 +1,3 @@
-// import express, { Express, Request, Response } from 'express';
-// import dotenv from 'dotenv';
-// import * as bodyParser from "body-parser";
-// import {userRouter} from "./routes/userRouter";
-// //import cors from 'cors';
-// import cors = require('cors');
-// dotenv.config();
-
-// const app: Express = express();
-// const port = process.env.PORT;
-// app.use(cors());
-// app.use(bodyParser.json());
-
-
-// app.get('/', (req: Request, res: Response) => {
-//   res.send('Express + TypeScript Server');
-// });
-// app.use("/users", userRouter);
-
-
-// app.listen(port, () => {
-//   console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
-// });
 import dotenv from 'dotenv';
 import express, { Express, Request, Response } from 'express';
 import * as bodyParser from "body-parser";
@@ -33,7 +10,7 @@ const app: Express = express();
 app.use(express.urlencoded({ extended: true }))
 const port = process.env.PORT;
 app.use(cors());
-// CORS
+// // CORS
 // app.use((req, res, next) => {
 //   res.append('Access-Control-Allow-Origin', ['*']);
 //   res.append('Access-Control-Allow-Methods','GET,PUT,POST,DELETE');
